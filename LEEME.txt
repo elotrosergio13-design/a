@@ -1,0 +1,19 @@
+FALSITY MOD (Forge 1.20.1, solo cliente)
+
+Que hace
+- Todos los mensajes del chat de OTROS jugadores salen como <Falsity> mensaje.
+- Tus propios mensajes se ven con tu nombre normal (lo detecta solo, no hace falta configurarlo).
+- El item verity:verity se muestra como "Falsity".
+
+Como compilarlo (opcion A: GitHub Actions, sin instalar nada)
+1. Crea un repositorio en GitHub y sube el contenido de esta carpeta.
+2. Pestana Actions -> "build" -> Run workflow (o se lanza solo al subir).
+3. Cuando termine, descarga el artefacto "falsitymod": dentro esta el .jar.
+4. Copia el .jar a la carpeta mods de tu instancia de Forge 1.20.1.
+
+Como compilarlo (opcion B: en tu PC)
+1. Instala JDK 17.
+2. Descarga el MDK de Forge 1.20.1 (files.minecraftforge.net) y copia de el
+   la carpeta "gradle" y los archivos gradlew / gradlew.bat a esta carpeta.
+3. Ejecuta: ./gradlew build   (en Windows: gradlew.bat build)
+4. El .jar queda en build/libs/.
